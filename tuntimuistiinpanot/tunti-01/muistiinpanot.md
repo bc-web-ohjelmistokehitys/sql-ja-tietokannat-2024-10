@@ -12,6 +12,18 @@ Tervetuloa "tietokannat ja SQL" kurssille. Esittelimme itsemme ja kerroimme, mit
 
 Käytämme kurssilla PostgreSQL-tietokantaa, koska se on paras, ilmainen ja de facto standardi.
 
+## Kurssin discord-palvelin ja Github
+
+Kurssin materiaalit asuvat Githubissa:
+
+- https://github.com/bc-web-ohjelmistokehitys/sql-ja-tietokannat-2024-10
+
+Kurssillamme on Discord-palvelin. Liity sinne allaolevalla linkille. Käymme siellä keskustelua digitaalisesti / asynkronisesti / tarpeen vaatiessa tuntien ulkopuolellakin, ja jaan siellä olennaisia linkkejä / matskuja.
+
+- https://discord.gg/nzNMHQrudw
+
+On enemmän kuin toivottavaa, että olet läsnä, mutta jos satut tulemaan kipeäksi tai estyneeksi, ja haluat silti kuunnella / katsella, saan Discordista etäyhteyden tarpeen tullen auki. Se ei ole paras mahdollinen ratkaisu, mutta parempi kuin ei mitään.
+
 ### Tärkeä opetus
 
 Jos et tiedä / osaa keksiä erityistä syytä valita minkä tahansa web-hankkeen tietovarastoksi jotakin muuta kuin PostgreSQL:n, valitse aina PostgreSQL.
