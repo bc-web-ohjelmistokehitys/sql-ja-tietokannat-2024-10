@@ -47,8 +47,20 @@ opiskelija@bar:~$ brew services start postgresql@17
 
 ## Tietokannan luonti + yhteydenotto tietokantaan.
 
-- `psql` komennon pitäisi asennus-show'n jälkeen antaa virheilmoitus luokkaa `database name XXXXXX not found`.
-- `createdb school` luo school-nimisen tietokannan wilma 2 - projektillemme.
+`psql` komennon pitäisi asennus-show'n jälkeen antaa virheilmoitus luokkaa `database name XXXXXX not found`.
+
+```console
+opiskelija@bar:~$ psql
+psql: error: connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "opiskelija" does not exist
+```
+
+`createdb school` luo school-nimisen tietokannan wilma 2 - projektillemme. Jos virhettä ei tule, luonti on onnistunut.
+
+```console
+opiskelija@bar:~$ createdb school
+opiskelija@bar:~$
+```
+
 - `psql school` ottaa shell-yhteyden example-nimiseen tietokantaan. **Huomaa, että terminaali-ikkuna muuttuu eri näköiseksi. Opi tunnistamaan, milloin ollaan tietokannassa, ja milloin "perus"-shellissä.**
 
 ```console
