@@ -74,7 +74,7 @@ Kertasimme tietokannan rakenteen muokkausta (`CREATE TABLE`, `DROP TABLE`). Harj
 ```sql
 SELECT * FROM student;
 SELECT id, last_name, first_name FROM student ORDER BY last_name, first_name;
-SELECT id, , birthday, first_name, last_name FROM student WHERE id = 1;
+SELECT id, birthday, first_name, last_name FROM student WHERE id = 1;
 
 UPDATE student SET birthday = '3000-02-01 BC' WHERE id = 1;
 
