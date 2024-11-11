@@ -47,7 +47,7 @@ https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 
 Puhuin _tietokannan normalisoinnista_, joka on tarkkaan määritelty määrämuotoinen tapa taulujen rakenteen parantamiseksi. Se vähentää toistoa. Käytännössä vai muutamalla ensimmäisellä ns. normaalimuodolla (about boyce-coddiin asti) on merkitystä, ja useimmiten taulujen suunnittelu on aika intuitiivista ja käytännönläheistä vs. teoreettista.
 
-- https://fi.wikipedia.org/wiki/Tietokannan_normalisointi
+- https://en.wikipedia.org/wiki/Database_normalization
 
 ## Koodista visuaaliseen editoriin
 
