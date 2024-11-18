@@ -119,10 +119,20 @@ opiskelija@bar:~$ psql tietokannannimi < dump.sql
 
 Otimme yhteyden etäpalvelimen tietokantaan "suomioy", jossa on 3.000.000 puolirealistista satunnaista "henkilötietoa". Ilman massiivista datamäärää emme pysty ymmärtämään, miten tosielämän tietokanta käyttäytyy.
 
-[ajoimme SQL-kyselyitä](./examples.sql) yhdessä samalla palvelimella. Ennen lounasta rohkaisin vapaaehtoisia oppilaita tuhoamaan puolestani kaiken tiedon!
+[ajoimme SQL-kyselyitä](./examples.sql) yhdessä samalla palvelimella, harjoittelimme tiedon hakemista. Lopulta sopivassa kohtaa rohkaisin vapaaehtoisia oppilaita tuhoamaan puolestani kaiken tiedon!
 
 - `DELETE FROM person;`
 - `DROP TABLE person CASCADE;`
+
+### Aggregaattifunktiot
+
+Käytimme lyhyesti `COUNT()` aggregaattifunktiota. Näitä on muitakin, ja palaamme niihin myöhemmin.
+
+`SELECT COUNT(id) FROM person;`
+
+### NULL-arvot
+
+Opimme, että NULL elää omassa maailmassaan. Sillä on oma operaattori, `IS NULL`, sekä sen vastakohta, `IS NOT NULL`. Mitä vähemmän null-arvoja tietokannassa on, sitä helpompi sen kanssa on nyrkkisääntönä rationalisoida.
 
 ## Ison tietokannan hakeminen omalle koneelle
 
@@ -131,13 +141,3 @@ Uploadasin tietokannan Google Driveen. Tosi isoja binääritiedostoja ei voi sä
 Latasimme kannan omalle koneelle, mutta jos et ollut tunnilla, tai tarvitset sitä joskus uudelleen, voit ladata kannan unzipata sen ja palauttaa omalle paikalliselle serverillesi.
 
 `https://drive.google.com/file/d/1ffawFMhvVinBlLcG8pX1vsjAzYCFlSTk/view`
-
-## Aggregaattifunktiot
-
-Käytimme lyhyesti `COUNT()` aggregaattifunktiota. Näitä on muitakin, ja palaamme niihin myöhemmin.
-
-`SELECT COUNT(id) FROM person;`
-
-## NULL-arvot
-
-Opimme, että NULL elää omassa maailmassaan. Sillä on oma operaattori, `IS NULL`, sekä sen vastakohta, `IS NOT NULL`. Mitä vähemmän null-arvoja tietokannassa on, sitä helpompi sen kanssa on nyrkkisääntönä rationalisoida.
