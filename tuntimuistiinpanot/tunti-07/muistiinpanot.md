@@ -58,6 +58,13 @@ Koodasimme rajapinnan isoon 3.000.000 rivin ihmistietokantaamme.
 - `GET /person/:id` palauttaa yksittäisen ihmisen tiedot
 - `DELETE /person/:id` tuhoaa yksittäisen ihmisen kannasta.
 
+Puhuimme tässä yhteydessä moneenkin otteeseen HTTP-vastauskoodeista ja niiden tärkeydestä.
+
+- 200: kaikki hyvin
+- 404: asiaa ei löydy
+- 500: Internal Server Error, kakka tuulettimessa
+- 503: väliaikainen huoltokatko
+
 ### Muut kuin GET-verbit
 
 Selaimen osoitepalkkiin kirjoitetuilla osoitteella voi tehdä vain `GET`-pyyntöjä. Muiden pyyntöjen tekemiseksi / testaamiseksi tarvitaan joko koodausta selaimessa tai työkaluja, joilla rajapintakutsuja voi tehdä.
